@@ -1,0 +1,30 @@
+header .logo {
+  width: 5em;
+  float: left;
+  clear: unset;
+}
+header .mid-content {
+  float: left;
+  font-weight: bold;
+  font-size: xx-large;
+  width: 75%;
+  line-height: 1em;
+  text-align: center;
+}
+img {
+  width: 100%;
+}
+body {
+  background: rgba(18, 41, 89, 0.85);
+}
+.post-image .wrapper {
+  border: 5px solid transparent;
+  padding: 0px;
+}
+div.justify.comesivota { text-align: justify; margin-bottom: 5%; }
+div.justify.comesivota div.text { padding: 2.5%; width: 30%; }
+div.justify.comesivota div.img { text-align: justify; margin-bottom: 5%; width: 65%; }
+div.justify.comesivota.left div { float: left; }
+div.justify.comesivota.right div { float: right; }
+div.justify.comesivota.left img,
+.clearfix { clear: both; }

@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Famiglia Occhino</title>
+  <meta name="description" content="Sito ufficiale della Famiglia Occhino — Radici siciliane, sguardo aperto al mondo.">
+
+  <!-- Google Fonts: Playfair Display (headings) + Lora (body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Lora:ital,wght@0,400;0,500;1,400&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="jscss/style.css">
+  <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+
+</head>
+
+<body>
+
+  <!-- =============================================
+       NAVIGATION
+       ============================================= -->
+  <header class="site-header">
+    <nav class="nav container" role="navigation" aria-label="Navigazione principale">
+
+      <a href="#home" class="nav-logo" aria-label="Famiglia Occhino — torna all'inizio">
+        <img class="logo-svg" src="images/logo.png" />
+        <span class="nav-logo-text">Occhino.it</span>
+      </a>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Apri menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <ul class="nav-links" id="navLinks" role="list">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">Chi Siamo</a></li>
+        <li><a href="#activities">Attività</a></li>
+        <li class="nav-item--dropdown">
+          <button class="nav-dropdown-toggle" aria-label="Apri menu Servizi" aria-expanded="false">Servizi</button>
+          <ul class="nav-dropdown-menu" role="list">
+            <li><a href="#email-service">Richiedi nuovo indirizzo</a></li>
+            <li><button class="nav-dropdown-btn" id="openCodiceModal">Calcola il Codice Fiscale</button></li>
+          </ul>
+        </li>
+        <li><a href="https://webmailssl.it/new/auth/login" target="_blank">Webmail</a></li>
+        <li><a href="#contact">Contatti</a></li>
+      </ul>
+
+    </nav>
+  </header>
+
+
+  <!-- =============================================
+       HERO
+       HOW TO ADD A REAL IMAGE:
+       1. Save your photo as images/hero.jpg
+       2. Remove the <div class="hero-img-placeholder"> block
+       3. Uncomment the <img> line below
+       Picsart prompt → see README.md
+       ============================================= -->
+  <section id="home" class="hero">
+    <div class="hero-bg" aria-hidden="true">
+
+      <img src="images/hero.jpg" class="hero-img" alt="Panorama di Roccafiorita, Sicilia">
+
+    </div>
+    <div class="hero-overlay" aria-hidden="true"></div>
+    <div class="hero-content container">
+      <span class="eyebrow">Famiglia</span>
+      <h1 class="hero-title">Occhino</h1>
+      <p class="hero-subtitle">Radici siciliane &middot; Sguardo aperto al mondo</p>
+      <a href="#about" class="button button--outline-white">Scopri di più</a>
+    </div>
+  </section>
+
+
+  <!-- =============================================
+       ABOUT — Chi Siamo
+       Edit the text below freely.
+       ============================================= -->
+  <section id="about" class="about section">
+    <div class="container about-grid">
+
+      <div class="about-image">
+        <span><img src="images/famiglia.jpg" alt="La Famiglia Occhino" class="img-full"></span>
+      </div>
+
+      <div class="about-text">
+        <span class="eyebrow">Chi Siamo</span>
+        <h2>Una famiglia,<br>molte storie.</h2>
+        <p>
+          Siamo la famiglia Occhino. Legati alle radici profonde della Sicilia,
+          tra Roccafiorita e Limina, con gli occhi sempre un po' più in là.
+        </p>
+        <p>
+          Questo spazio è il nostro angolo sul web dal 2012: un posto dove
+          raccogliere quello che siamo, quello che facciamo, e dove trovare
+          un modo semplice per scriverci.
+        </p>
+        <!-- Add more paragraphs here as needed -->
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- =============================================
+       ROOTS — Le Nostre Radici
+       ============================================= -->
+  <section id="roots" class="roots section">
+    <div class="container">
+      <span class="eyebrow centered">Le Nostre Radici</span>
+      <h2 class="section-title centered">Sicilia</h2>
+      <p class="section-intro centered">
+        Due paesi, una valle. Profumi di zagara e di pietra antica.
+      </p>
+
+      <div class="roots-grid">
+
+        <article class="root-card">
+          <div class="img-placeholder img-placeholder--card">
+            <span><img src="images/roccafiorita.jpg" alt="Roccafiorita" class="img-full"></span>
+          </div>
+          <div class="root-card-body">
+            <h3>Roccafiorita</h3>
+            <p>
+              Il paese più piccolo di Sicilia, arroccato sulle pendici dei Nebrodi.
+              Viuzze di pietra lavica, vista sulla Valle dell'Alcantara,
+              e un silenzio che racconta secoli di storia.
+            </p>
+          </div>
+        </article>
+
+        <article class="root-card">
+          <div class="img-placeholder img-placeholder--card">
+            <span><img src="images/limina.jpg" alt="Limina" class="img-full"></span>
+          </div>
+          <div class="root-card-body">
+            <h3>Limina</h3>
+            <p>
+              Tra i Peloritani e lo Ionio, Limina custodisce tradizioni antiche
+              e un paesaggio che cambia colore con le stagioni,
+              dal verde intenso all'oro dell'estate siciliana.
+            </p>
+          </div>
+        </article>
+
+      </div>
+
+      <!-- Weather cards -->
+      <div class="weather-container">
+        <article class="weather-bar" id="weatherRoccafiorita">
+          <div class="weather-location">
+            <h4>Roccafiorita</h4>
+          </div>
+          <div class="weather-display">
+            <div class="weather-icon" id="weatherIconRoccafiorita">🌡️</div>
+            <div class="weather-main">
+              <p class="weather-temp" id="weatherTempRoccafiorita">—</p>
+              <p class="weather-condition" id="weatherConditionRoccafiorita">Caricamento...</p>
+            </div>
+          </div>
+          <div class="weather-details" id="weatherDetailsRoccafiorita"></div>
+        </article>
+
+        <article class="weather-bar" id="weatherLimina">
+          <div class="weather-location">
+            <h4>Limina</h4>
+          </div>
+          <div class="weather-display">
+            <div class="weather-icon" id="weatherIconLimina">🌡️</div>
+            <div class="weather-main">
+              <p class="weather-temp" id="weatherTempLimina">—</p>
+              <p class="weather-condition" id="weatherConditionLimina">Caricamento...</p>
+            </div>
+          </div>
+          <div class="weather-details" id="weatherDetailsLimina"></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- =============================================
+       ACTIVITIES — Le Nostre Attività
+       HOW TO CUSTOMIZE:
+       - Change the emoji in <div class="activity-icon">
+       - Edit title in <h4> and text in <p>
+       - Duplicate an .activity-card block to add more
+       - Delete cards you don't need
+       ============================================= -->
+  <section id="activities" class="activities section">
+    <div class="container">
+      <span class="eyebrow centered">Le Nostre Attività</span>
+      <h2 class="section-title centered">Quello che facciamo</h2>
+
+      <div class="activity-grid">
+
+        <!-- Card 1 — customize freely -->
+        <div class="activity-card">
+          <div class="activity-icon">☕️</div>
+          <h4>Caffeteria Occhino</h4>
+          <p>Serviamo caff&egrave; da oltre 40 anni a Limina; ma non ci fermiamo qui: da noi ristorante e pizzeria della
+            tradizione.</p>
+          <a href="https://caffetteria.occhino.it" target="_blank" title="Caffetteria Occhino">
+            <img src="images/caffetteria.png" class="attivita" />
+          </a>
+        </div>
+
+        <!-- Card 2 — customize freely -->
+        <div class="activity-card">
+          <div class="activity-icon">📹</div>
+          <h4>Telecasamia</h4>
+          <p>Notizie ed interviste locali, per tenerci sempre informati. Attualit&agrave; e notizie, anche sportive.</p>
+          <a href="https://www.facebook.com/filippo.occhino.3/?locale=it_IT" target="_blank" title="Telecasamia">
+            <img src="images/telecasamia.png" class="attivita" />
+          </a>
+        </div>
+
+        <!-- Card 3 — customize freely -->
+        <div class="activity-card">
+          <div class="activity-icon">☀️</div>
+          <h4>HelioH2</h4>
+          <p>Impianti fotovoltaici da produzione indipendente. Servizi per le aziende ed efficientamento energetico.</p>
+          <a href="https://www.helioh2.com" target="_blank" title="HelioH2 S.r.l.">
+            <img src="images/helioh2.png" class="attivita" />
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- =============================================
+       EMAIL SERVICE
+       No selling, no VAT — info request only.
+       JavaScript handles live preview & mailto.
+       ============================================= -->
+  <section id="email-service" class="email-section section section--alt">
+    <div class="container email-grid">
+
+      <article class="email-panel">
+        <span class="eyebrow">Servizio Email</span>
+        <h2>Il tuo indirizzo<br>@occhino.it</h2>
+        <p>
+          Vuoi un indirizzo email personalizzato <strong>@occhino.it</strong>?
+          Inserisci nome e cognome: l'anteprima si aggiorna in tempo reale.
+          Poi invia la richiesta — ti risponderemo direttamente.
+        </p>
+
+        <ul class="feature-list">
+          <li>Indirizzo personalizzato @occhino.it</li>
+          <li>Riservato ai membri della famiglia</li>
+          <li>Contatto: info@occhino.it</li>
+        </ul>
+
+        <!-- ── Fillable form ── -->
+        <div class="email-form">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="emailNome" class="form-label">Nome</label>
+              <input type="text" id="emailNome" class="form-input" placeholder="es. Mario" autocomplete="given-name">
+            </div>
+            <div class="form-group">
+              <label for="emailCognome" class="form-label">Cognome</label>
+              <input type="text" id="emailCognome" class="form-input" placeholder="es. Occhino"
+                autocomplete="family-name">
+            </div>
+          </div>
+        </div>
+
+        <div class="button-group">
+          <a class="button button--primary" id="emailRequestBtn"
+            href="mailto:info@occhino.it?subject=Richiesta%20indirizzo%20%40occhino.it">
+            Richiedi informazioni
+          </a>
+
+          <a class="button button--primary" id="emailRequestBtn" href="https://webmailssl.it">
+            Vai alla webmail
+          </a>
+        </div>
+
+        <p class="form-note">
+          Il pulsante apre il tuo client email con un messaggio precompilato in italiano.
+        </p>
+      </article>
+
+      <!-- ── Live preview aside ── -->
+      <aside class="email-examples">
+        <span class="sample-label">Anteprima del tuo indirizzo</span>
+
+        <div class="email-preview-card" id="emailPreviewCard">
+          <div class="email-preview-address" id="emailPreview">
+            <span class="preview-placeholder">nome@occhino.it</span>
+          </div>
+        </div>
+        <p>Semplice e personale: l'unico servizio attivo sul sito.</p>
+      </aside>
+
+    </div>
+  </section>
+
+
+  <!-- =============================================
+       CONTACT — Contattaci
+       ============================================= -->
+  <section id="contact" class="contact section">
+    <div class="container contact-inner">
+      <span class="eyebrow centered">Contatti</span>
+      <h2 class="section-title centered">Scrivici</h2>
+      <p class="section-intro centered">
+        Per qualsiasi cosa, il modo più semplice per raggiungerci è via email.
+      </p>
+
+      <div class="contact-text">
+        <p>
+          <strong>Email:</strong> <a href="mailto:info@occhino.it">info@occhino.it</a> &ndash;
+          <strong>Dominio:</strong> occhino.it
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =============================================
+       CODICE FISCALE — Modal Popup
+       ============================================= -->
+  <div id="codice-fiscale-modal" class="modal" role="dialog" aria-labelledby="codice-title" aria-hidden="true">
+    <div class="modal-overlay" id="codiceModalOverlay"></div>
+    <div class="modal-content">
+      <button class="modal-close" id="codiceModalClose" aria-label="Chiudi">✕</button>
+
+      <div class="modal-body">
+        <h2 id="codice-title">Calcola il tuo Codice Fiscale</h2>
+        <p>Inserisci i tuoi dati personali e ottieni il codice fiscale in pochi secondi.</p>
+
+        <div class="codice-form">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="codiceCognome" class="form-label">Cognome</label>
+              <input type="text" id="codiceCognome" class="form-input" placeholder="es. Occhino" autocomplete="family-name">
+            </div>
+            <div class="form-group">
+              <label for="codiceNome" class="form-label">Nome</label>
+              <input type="text" id="codiceNome" class="form-input" placeholder="es. Mario" autocomplete="given-name">
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="codiceSesso" class="form-label">Sesso</label>
+              <select id="codiceSesso" class="form-input">
+                <option value="">— Seleziona —</option>
+                <option value="M">Maschio</option>
+                <option value="F">Femmina</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="codiceLuogo" class="form-label">Comune di nascita</label>
+              <input type="text" id="codiceLuogo" class="form-input" placeholder="es. Limina" autocomplete="address-level2">
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="codiceData" class="form-label">Data di nascita</label>
+              <input type="date" id="codiceData" class="form-input">
+            </div>
+          </div>
+        </div>
+
+        <button class="button button--primary" id="codiceCalcolaBtn" style="width: 100%; margin-top: 1.5rem;">Calcola Codice</button>
+
+        <div class="codice-result-box" id="codiceResult" style="margin-top: 1.5rem; text-align: center;">
+          <span class="result-placeholder">—</span>
+        </div>
+
+        <p class="form-note" style="text-align: center; margin-top: 1rem;">
+          Nessun dato viene salvato. Il calcolo &egrave; fatto sul momento. <br />
+          Calcolo basato sugli algoritmi ufficiali del D.M. n° 345 del 23/12/1976
+        </p>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- =============================================
+       FOOTER
+       ============================================= -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <svg class="logo-svg logo-svg--footer" viewBox="0 0 70 70" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <circle cx="35" cy="35" r="31" fill="none" stroke="#C97C4D" stroke-width="2.5" />
+        <text x="35" y="49" text-anchor="middle" font-family="'Playfair Display', Georgia, serif" font-size="40"
+          font-weight="700" fill="#C97C4D">O</text>
+      </svg>
+      <p class="footer-tagline">Famiglia Occhino &mdash; Roccafiorita, Sicilia</p>
+      <p class="footer-copy">
+        &copy; <span id="year"></span> occhino.it &middot; Online dal 2012.
+      </p>
+    </div>
+  </footer>
+
+
+  <!-- =============================================
+       SCRIPTS — no external dependencies
+       ============================================= -->
+  <script src="jscss/script.js"></script>
+
+</body>
+
+</html>
