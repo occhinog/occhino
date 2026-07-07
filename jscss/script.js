@@ -414,7 +414,7 @@ setupModal('webmail-modal', 'openWebmailModal', 'webmailModalClose', 'webmailMod
         timer = setTimeout(function () { clicks = 0; }, 5000);
         if (clicks >= 3) {
             clicks = 0;
-            window.open('projects/index.html');
+            window.open('progetti.occhino.it');
         }
     });
 })();
