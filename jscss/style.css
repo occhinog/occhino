@@ -1120,6 +1120,18 @@ strong {
   transition: filter 0.3s ease;
 }
 
+.flex-git {
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   gap: 4px;
+   align-items: center;
+}
+
+.flex-git svg {
+   width: 18px;
+}
+
 @keyframes logo-pulse {
   0% {
     filter: drop-shadow(0 0 4px #C97C4D80);
