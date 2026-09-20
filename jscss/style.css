@@ -720,6 +720,8 @@ strong {
 .activity-card {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+  gap: 1.25rem;
   background-color: var(--white);
   border: 1px solid var(--border);
   border-radius: var(--radius);
@@ -732,19 +734,24 @@ strong {
   box-shadow: 0 4px 20px rgba(44, 44, 44, 0.08);
 }
 
+.activity-heading {
+  flex: 0 0 auto;
+}
+
 .activity-icon {
-  font-size: 2.25rem;
-  margin-bottom: 1rem;
   display: block;
+  margin-bottom: 1rem;
+  font-size: 2.25rem;
 }
 
 .activity-card h4 {
   font-size: 1.15rem;
+  margin: 0;
   color: var(--charcoal);
-  margin-bottom: 0.5rem;
 }
 
 .activity-card p {
+  margin: 0;
   font-size: 0.9rem;
   color: var(--warm-gray);
   line-height: 1.65;
@@ -766,8 +773,7 @@ strong {
 
 .activity-image-link {
   display: block;
-  margin-top: auto;
-  padding-top: 1.25rem;
+  flex: 0 0 auto;
 }
 
 .attivita {
