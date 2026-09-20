@@ -748,6 +748,10 @@ strong {
   line-height: 1.65;
 }
 
+.activity-web-accent {
+  color: var(--terracotta);
+}
+
 .activity-web-link {
   display: inline-flex;
   align-items: center;
